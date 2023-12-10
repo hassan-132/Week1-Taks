@@ -14,7 +14,7 @@ public class Server {
             factory.setHost("localhost");
             Connection connection = factory.newConnection();
             Channel channel = connection.createChannel();
-
+            System.out.println("From main section of Server");
             // Declare exchange
             channel.exchangeDeclare(exchangeName, "direct");
 
