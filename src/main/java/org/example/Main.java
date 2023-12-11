@@ -5,5 +5,6 @@ public class Main {
         // comments
         System.out.println("Salam Pakistan!");
         System.out.println("Namaste India!");
+        System.out.println("Hola Amigos!");
     }
 }
