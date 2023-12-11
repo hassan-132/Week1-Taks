@@ -10,12 +10,11 @@ public class Server {
 
     public static void main(String[] args) {
         try {
-            //connection established
             ConnectionFactory factory = new ConnectionFactory();
             factory.setHost("localhost");
             Connection connection = factory.newConnection();
             Channel channel = connection.createChannel();
-            System.out.println("Receiving message from Client");
+            System.out.println("Receiving message from Client 1");
             // Declare exchange
             channel.exchangeDeclare(exchangeName, "direct");
 
