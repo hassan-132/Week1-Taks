@@ -10,6 +10,7 @@ public class Server {
 
     public static void main(String[] args) {
         try {
+            System.out.println("Entered main of Server");
             ConnectionFactory factory = new ConnectionFactory();
             factory.setHost("localhost");
             Connection connection = factory.newConnection();
