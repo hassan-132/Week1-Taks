@@ -16,6 +16,7 @@ public class Client {
             factory.setHost("localhost");
             Connection connection = factory.newConnection();
             Channel channel = connection.createChannel();
+            System.out.Println("Hello from Client");
             channel.exchangeDeclare(exchangeName, "direct");
             channel.basicPublish(exchangeName, routingKey, null, msg.getBytes());
             System.out.println("Message sent: " + msg);
