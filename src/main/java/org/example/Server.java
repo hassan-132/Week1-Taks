@@ -14,7 +14,7 @@ public class Server {
             factory.setHost("localhost");
             Connection connection = factory.newConnection();
             Channel channel = connection.createChannel();
-            System.out.println("Receiving message from Client 1");
+            System.out.println("Receiving message from Client");
             // Declare exchange
             channel.exchangeDeclare(exchangeName, "direct");
 
