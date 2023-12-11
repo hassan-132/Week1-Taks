@@ -4,7 +4,6 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
 public class Client {
-    //    private static final String QUEUE_NAME = "myQueue";S
     private static final String msg = "Hello from India";
     private static final String exchangeName = "task_1_exchange";
     private static final String routingKey = "task_routing_key";
